@@ -1,8 +1,7 @@
 import React from 'react';
 
 import MapStyled from './MapStyled';
-
-import { render } from '@testing-library/react';
+import warehouse from '../../assets/images/warehouse.jpg';
 
 class Map extends React.Component {
 
@@ -10,7 +9,13 @@ class Map extends React.Component {
   render() {
     return (
       <MapStyled>
-        Map
+        <div className="map-container">
+        <img
+          src={warehouse}
+          alt="Le plan de l'entrepôt"
+          className="warehouse"
+        />
+        </div>
       </MapStyled>
     );
   }

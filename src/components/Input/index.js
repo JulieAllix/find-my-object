@@ -2,8 +2,6 @@ import React from 'react';
 
 import InputStyled from './InputStyled';
 
-import { render } from '@testing-library/react';
-
 class Input extends React.Component {
 
   
