@@ -20,10 +20,21 @@ const MapStyled = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
     .warehouse {
-        width: 90%;
+        width: 300px;
+    }
+
+    .shelves {
+        position: absolute;
+        border: 1px solid red;
+        width: 110px;
+        height: 170px;
+        z-index: 2;
+        top: 5rem;
+        left: 8rem;
     }
 
     @media screen and (min-width: 600px){

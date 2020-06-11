@@ -15,6 +15,9 @@ class Map extends React.Component {
           alt="Le plan de l'entrepôt"
           className="warehouse"
         />
+        <div className="shelves">
+          Test
+        </div>
         </div>
       </MapStyled>
     );
