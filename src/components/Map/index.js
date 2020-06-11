@@ -26,7 +26,7 @@ const Map = () => {
                   key={number}
                   letter={letter}
                   number={number}
-                  highlightedShelf="b3"
+                  highlightedShelf="a4"
                 />
               ))}
             </div>
