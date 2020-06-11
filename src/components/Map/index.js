@@ -16,7 +16,106 @@ class Map extends React.Component {
           className="warehouse"
         />
         <div className="shelves">
-          Test
+          <div className="shelves-row">
+            <div className="shelf">
+              A0
+            </div>
+            <div className="shelf">
+              A1
+            </div>
+            <div className="shelf">
+              A2
+            </div>
+            <div className="shelf">
+              A3
+            </div>
+            <div className="shelf">
+              A4
+            </div>
+            <div className="shelf">
+              A5
+            </div>
+          </div>
+          <div className="shelves-row">
+            <div className="shelf">
+              A0
+            </div>
+            <div className="shelf">
+              A1
+            </div>
+            <div className="shelf">
+              A2
+            </div>
+            <div className="shelf">
+              A3
+            </div>
+            <div className="shelf">
+              A4
+            </div>
+            <div className="shelf">
+              A5
+            </div>
+          </div>
+          <div className="shelves-row">
+            <div className="shelf">
+              A0
+            </div>
+            <div className="shelf">
+              A1
+            </div>
+            <div className="shelf">
+              A2
+            </div>
+            <div className="shelf">
+              A3
+            </div>
+            <div className="shelf">
+              A4
+            </div>
+            <div className="shelf">
+              A5
+            </div>
+          </div>
+          <div className="shelves-row">
+            <div className="shelf">
+              A0
+            </div>
+            <div className="shelf">
+              A1
+            </div>
+            <div className="shelf">
+              A2
+            </div>
+            <div className="shelf">
+              A3
+            </div>
+            <div className="shelf">
+              A4
+            </div>
+            <div className="shelf">
+              A5
+            </div>
+          </div>
+          <div className="shelves-row">
+            <div className="shelf">
+              A0
+            </div>
+            <div className="shelf">
+              A1
+            </div>
+            <div className="shelf">
+              A2
+            </div>
+            <div className="shelf">
+              A3
+            </div>
+            <div className="shelf">
+              A4
+            </div>
+            <div className="shelf">
+              A5
+            </div>
+          </div>
         </div>
         </div>
       </MapStyled>

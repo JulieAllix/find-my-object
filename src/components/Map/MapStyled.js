@@ -10,13 +10,6 @@ const MapStyled = styled.div`
     margin: 2rem auto;
 
     .map-container {
-        /*background-image: url(${warehouse });
-        background-position: center;
-        background-size: auto;
-        border: 1px solid red;
-        width: 95%;
-        min-height: 800px;
-        */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,12 +30,40 @@ const MapStyled = styled.div`
         left: 8rem;
     }
 
+    .shelves-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+        border: 1px solid green;
+    }
+
+    .shelf {
+        width: 16.66%;
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     @media screen and (min-width: 600px){
     
     }
 
     @media screen and (min-width: 900px){
+        .warehouse {
+            width: 850px;
+        }
 
+        .shelves {
+            position: absolute;
+            border: 1px solid red;
+            width: 312px;
+            height: 482px;
+            z-index: 2;
+            top: 14rem;
+            left: 22.6rem;
+        }
     }
     
 `
