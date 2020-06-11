@@ -10,7 +10,14 @@ class Input extends React.Component {
   render() {
     return (
       <InputStyled>
-        Input
+        <form className="search-bar-form">
+          <input 
+            className="search-bar-input"
+            placeHolder="ex: dq324"
+            type="text"
+            name="searchBar"
+          />
+        </form>
       </InputStyled>
     );
   }
