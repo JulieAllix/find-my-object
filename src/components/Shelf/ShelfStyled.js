@@ -16,6 +16,10 @@ const ShelfStyled = styled.div`
         font-size: .7rem;
     }
 
+    .highlighted {
+        background-color: yellow;
+    }
+
     @media screen and (min-width: 600px){
 
         .shelf {
