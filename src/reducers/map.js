@@ -3,7 +3,7 @@
 
 // Initial State
 const initialState = {
-  highlightedShelf: '',
+  highlightedShelf: 'e2',
 };
 
 // Reducer

@@ -3,7 +3,7 @@ import Map from '../components/Map';
 
 // == Data / state
 const mapStateToProps = (state) => ({
-    highlightedShelf: 'd4',
+    highlightedShelf: state.map.highlightedShelf,
 });
 
 // == Actions / dispatch
