@@ -6,20 +6,15 @@ import Map from '../Map';
 
 import AppStyled from './AppStyled';
 
-import { render } from '@testing-library/react';
+const App = () => {
+  return (
+    <AppStyled>
+      <Header />
+      <Input />
+      <Map />
+    </AppStyled>
+  );
+};
 
-class App extends React.Component {
-
-  
-  render() {
-    return (
-      <AppStyled>
-        <Header />
-        <Input />
-        <Map />
-      </AppStyled>
-    );
-  }
-}
 
 export default App;
