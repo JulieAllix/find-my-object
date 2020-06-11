@@ -2,13 +2,13 @@ const theme = {
 
     /* Fonts */
 
-    titleFont: 'Abril Fatface',
-    contentFont: 'Poppins',
+    contentFont: 'Raleway',
 
     /* Colors */
 
-    primaryColor: '',
-    accentColor: '',
+    primaryColor: '#314e58',
+    accentColor: '#222222',
+    backgroundColor: '#f3f9ff'
 
     /* Sizes */
     
