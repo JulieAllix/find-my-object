@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <AppStyled>
-        Coucou
+        Test
       </AppStyled>
     );
   }
