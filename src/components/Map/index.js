@@ -8,7 +8,7 @@ import warehouse from '../../assets/images/warehouse.jpg';
 const letters = ['a', 'b', 'c', 'd', 'e'];
 const numbers = ['0', '1', '2', '3', '4', '5'];
 
-const Map = () => {
+const Map = ({ highlightedShelf }) => {
   return (
     <MapStyled>
       <div className="map-container">
@@ -26,7 +26,7 @@ const Map = () => {
                   key={number}
                   letter={letter}
                   number={number}
-                  highlightedShelf="a4"
+                  highlightedShelf={highlightedShelf}
                 />
               ))}
             </div>
