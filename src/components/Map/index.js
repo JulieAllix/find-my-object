@@ -22,7 +22,7 @@ class Map extends React.Component {
               <div className="shelves-row">
                 {numbers.map((number) => (
                 <div className="shelf">
-                  {letter}{number}
+                  <p className="shelf-name">{letter}{number}</p>
                 </div>
                 ))}
               </div>

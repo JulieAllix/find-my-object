@@ -46,8 +46,25 @@ const MapStyled = styled.div`
         justify-content: center;
     }
 
+    .shelf-name {
+        font-size: .7rem;
+    }
+
     @media screen and (min-width: 600px){
-    
+        .warehouse {
+            width: 580px;
+        }
+
+        .shelves {
+            width: 212px;
+            height: 328px;
+            top: 9.67rem;
+            left: 15.47rem;
+        }
+
+        .shelf-name {
+            font-size: 1rem;
+        }
     }
 
     @media screen and (min-width: 900px){
@@ -56,13 +73,14 @@ const MapStyled = styled.div`
         }
 
         .shelves {
-            position: absolute;
-            border: 1px solid red;
             width: 312px;
             height: 482px;
-            z-index: 2;
             top: 14rem;
             left: 22.6rem;
+        }
+
+        .shelf-name {
+            font-size: 1.5rem;
         }
     }
     
