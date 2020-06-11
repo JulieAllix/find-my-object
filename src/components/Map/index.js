@@ -20,7 +20,7 @@ const Map = ({ highlightedShelf }) => {
         <div className="shelves">
         {/* I map on the letter and number objects in order to create the shelves names*/}
           {letters.map((letter) => (
-            <div className="shelves-row">
+            <div className="shelves-row" key={letter}>
               {numbers.map((number) => (
                 <Shelf 
                   key={number}

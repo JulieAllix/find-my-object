@@ -2,15 +2,20 @@ import React from 'react';
 
 import InputStyled from './InputStyled';
 
-const Input = () => {
+const Input = ({ changeFieldValue, searchValue }) => {
+  const handleChange = (evt) => {
+    evt.preventDefault();
+    changeFieldValue(evt.target.value);
+  };
   return (
     <InputStyled>
       <form className="search-bar-form">
         <input 
           className="search-bar-input"
-          placeHolder="ex: dq324"
+          placeholder="ex: dq324"
           type="text"
-          name="searchBar"
+          onChange={handleChange}
+          value={searchValue}
         />
       </form>
     </InputStyled>

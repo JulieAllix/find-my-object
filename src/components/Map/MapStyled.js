@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
-
-import warehouse from '../../assets/images/warehouse.jpg';
 
 const MapStyled = styled.div`
     display: flex;

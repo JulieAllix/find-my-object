@@ -5,7 +5,7 @@ import ShelfStyled from './ShelfStyled';
 
 const Shelf = ({letter, number, highlightedShelf}) => {
   const shelfName = letter + number;
-  if (shelfName == highlightedShelf){
+  if (shelfName === highlightedShelf){
     return (
       <ShelfStyled>
         <div className={classNames({

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../Header';
-import Input from '../Input';
+import Input from '../../containers/Input';
 import Map from '../../containers/Map';
 
 import AppStyled from './AppStyled';

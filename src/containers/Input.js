@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import Map from '../components/Map';
+import Input from '../components/Input';
 import { changeField } from '../actions/input';
 
 // == Data / state
 const mapStateToProps = (state) => ({
-    highlightedShelf: state.map.highlightedShelf,
+    searchValue: state.input.searchValue,
 });
 
 // == Actions / dispatch
@@ -15,6 +15,6 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 // connect(redux)(react)
-const MapContainer = connect(mapStateToProps, mapDispatchToProps)(Map);
+const InputContainer = connect(mapStateToProps, mapDispatchToProps)(Input);
 
-export default MapContainer;
+export default InputContainer;
