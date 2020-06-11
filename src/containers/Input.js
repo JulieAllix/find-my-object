@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Input from '../components/Input';
-import { changeField } from '../actions/input';
+import { changeField, searchShelf } from '../actions/input';
 
 // == Data / state
 const mapStateToProps = (state) => ({
@@ -11,7 +11,10 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
     changeFieldValue: (value) => {
         dispatch(changeField(value));
-      },
+    },
+    searchShelf: (value) => {
+        dispatch(searchShelf(value));
+    },
 });
 
 // connect(redux)(react)
