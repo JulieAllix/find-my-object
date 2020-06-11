@@ -4,8 +4,6 @@ import logo from '../../assets/images/stockoss.png';
 
 import HeaderStyled from './HeaderStyled';
 
-import { render } from '@testing-library/react';
-
 class Header extends React.Component {
 
   
