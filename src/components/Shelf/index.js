@@ -11,6 +11,7 @@ const Shelf = ({letter, number, highlightedShelf}) => {
         <div className={classNames({
           shelf: true,
           highlighted: true,
+          [letter]: true,
         })}
         >
           <p className="shelf-name">
@@ -25,6 +26,7 @@ const Shelf = ({letter, number, highlightedShelf}) => {
         <div className={classNames({
           shelf: true,
           highlighted: false,
+          [letter]: true,
         })}
         >
           <p className="shelf-name">

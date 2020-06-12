@@ -10,6 +10,11 @@ const theme = {
     accentColor: '#222222',
     backgroundColor: '#f3f9ff',
     contentColor: '#60656a',
+    aColor: '#264653',
+    bColor: '#2a9d8f',
+    cColor: '#e9c46a',
+    dColor: '#f4a261',
+    eColor: '#e76f51',
 
     /* Sizes */
     mobileTitle: '1.5rem',

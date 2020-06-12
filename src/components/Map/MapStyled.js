@@ -31,7 +31,6 @@ const MapStyled = styled.div`
         flex-direction: row;
         width: 100%;
         height: 20%;
-        border: 1px solid green;
     }
 
     @media screen and (min-width: 600px){
