@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../../styles/theme';
 
 const MapStyled = styled.div`
     display: flex;
@@ -14,7 +15,7 @@ const MapStyled = styled.div`
     }
 
     .warehouse {
-        width: 300px;
+        width: ${theme.smallImage};
     }
 
     .shelves {
@@ -36,13 +37,13 @@ const MapStyled = styled.div`
     @media screen and (min-width: 600px){
         
         .warehouse {
-            width: 580px;
+            width: ${theme.mediumImage};
         }
 
         .shelves {
             width: 212px;
             height: 328px;
-            top: 9.67rem;
+            top: 9.65rem;
             left: 15.47rem;
         }
 
@@ -52,7 +53,7 @@ const MapStyled = styled.div`
         margin: 2rem auto 3rem;
 
         .warehouse {
-            width: 850px;
+            width: ${theme.largeImage};
         }
 
         .shelves {
