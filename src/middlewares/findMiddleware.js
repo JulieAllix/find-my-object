@@ -10,9 +10,11 @@ const findMiddleware = (store) => (next) => (action) => {
       // I launch an ajax request to my server
       // I'm sending the search data
       const state = store.getState();
+      const input = state.input.searchValue;
       console.log('Je suis dans le middleware !');
-      axios.post(`../assets/StockossTest.js`, {
-        input: state.input.searchValue,
+      console.log(input);
+      axios.post(`http://localhost:3001/src/assets/StockossTest.js`, {
+        input: 'dq324',
       })
         .then((response) => {
           console.log(response);
