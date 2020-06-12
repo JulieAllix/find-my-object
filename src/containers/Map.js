@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import Map from '../components/Map';
-import { changeField } from '../actions/input';
 
 // == Data / state
 const mapStateToProps = (state) => ({

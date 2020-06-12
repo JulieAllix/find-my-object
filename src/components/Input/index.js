@@ -37,13 +37,13 @@ const Input = ({
         <input 
           type="text"
           name="identifiant"
-          autocomplete="off"
+          autoComplete="off"
           required
           className="search-bar-input"
           onChange={handleChange}
           value={searchValue}
         />
-        <label for="identifiant" className="label-name">
+        <label htmlFor="identifiant" className="label-name">
           <span className="content-name">Identifiant</span>
         </label>
       </form>
