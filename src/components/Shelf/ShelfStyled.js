@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import theme from '../../styles/theme';
+import theme from '../../styles/theme';
 
 const ShelfStyled = styled.div`
 
@@ -14,10 +14,38 @@ const ShelfStyled = styled.div`
 
     .shelf-name {
         font-size: .7rem;
+        font-weight: bold;
+    }
+
+    .a {
+        border-color: ${theme.aColor};
+        color: ${theme.aColor};
+    }
+
+    .b {
+        border-color: ${theme.bColor};
+        color: ${theme.bColor};
+    }
+
+    .c {
+        border-color: ${theme.cColor};
+        color: ${theme.cColor};
+    }
+
+    .d {
+        border-color: ${theme.dColor};
+        color: ${theme.dColor};
+    }
+
+    .e {
+        border-color: ${theme.eColor};
+        color: ${theme.eColor};
     }
 
     .highlighted {
-        background-color: yellow;
+        background-color: #e63946;
+        border: 1px solid #e63946;
+        color: white;
     }
 
     @media screen and (min-width: 600px){
@@ -33,6 +61,7 @@ const ShelfStyled = styled.div`
     }
 
     @media screen and (min-width: 900px){
+        
         .shelf {
             width: 50px;
         }
