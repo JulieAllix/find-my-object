@@ -44,6 +44,7 @@ const ShelfStyled = styled.div`
 
     .highlighted {
         background-color: #e63946;
+        border: 1px solid #e63946;
         color: white;
     }
 

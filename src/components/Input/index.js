@@ -1,20 +1,30 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import InputStyled from './InputStyled';
 import api from '../../assets/StockossTest.js';
 
-const Input = ({ changeFieldValue, searchValue, savePosition }) => {
+const Input = ({ 
+  changeFieldValue, 
+  searchValue, 
+  savePosition, 
+  opacityStatus, 
+  changeOpacityStatus 
+}) => {
   const handleChange = (evt) => {
     evt.preventDefault();
     changeFieldValue(evt.target.value);
 
     if (evt.target.value.length === 5) {
-      console.log('Code valide !');
+      changeOpacityStatus(false);
       let id = evt.target.value;
       const result = api(id).position;
       savePosition(result);
+    } else if (evt.target.value.length > 5) {
+      savePosition("");
+      changeOpacityStatus(true);
     } else {
-      console.log('Le code doit contenir 5 caractères !');
+      changeOpacityStatus(false);
       savePosition("");
     }
   };
@@ -35,6 +45,13 @@ const Input = ({ changeFieldValue, searchValue, savePosition }) => {
           <span className="content-name">Identifiant</span>
         </label>
       </form>
+      <p className={classNames({
+          warning: true,
+          appear: opacityStatus,
+        })}
+      >
+        Attention, vous avez saisi un trop grand nombre de caractères : l'identifiant doit contenir <em>5 caractères</em>, ni plus ni moins !
+      </p>
     </InputStyled>
   );
 };

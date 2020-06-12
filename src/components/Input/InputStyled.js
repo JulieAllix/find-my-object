@@ -3,6 +3,7 @@ import theme from '../../styles/theme';
 
 const InputStyled = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -12,7 +13,7 @@ const InputStyled = styled.div`
 
     .form {
         position: relative;
-        height: 50px;
+        height: 60px;
         overflow: hidden;
         width: 180px;
     }
@@ -22,7 +23,7 @@ const InputStyled = styled.div`
         height: 100%;
         color: ${theme.accentColor};
         font-size: ${theme.mobileContent};
-        padding-top: 5px;
+        padding-top: 15px;
         padding-left: 0;
         border: none;
         outline: none;
@@ -71,6 +72,23 @@ const InputStyled = styled.div`
         transform: translateX(0%);
     }
 
+    .warning {
+        margin-top: 1rem;
+        font-size: ${theme.mobileContent};
+        color: #e63946;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+    }
+
+    .appear {
+        opacity: 1;
+        transition: opacity 0.6s ease;
+    }
+
+    em {
+        font-weight: bold;
+    }
+
     @media screen and (min-width: 600px){
     
         .form input {
@@ -85,6 +103,10 @@ const InputStyled = styled.div`
         .form input:focus + .label-name .content-name, 
         .form input:valid + .label-name .content-name {
             font-size: ${theme.tabletContentMin};
+        }
+
+        .warning {
+            font-size: ${theme.tabletContent};
         }
 
     }
@@ -108,6 +130,9 @@ const InputStyled = styled.div`
             font-size: ${theme.desktopContentMin};
         }
 
+        .warning {
+            font-size: ${theme.desktopContent};
+        }
     }
     
 `
