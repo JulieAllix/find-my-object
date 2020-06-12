@@ -8,11 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 // == Actions / dispatch
-const mapDispatchToProps = (dispatch) => ({
-    changeFieldValue: (value) => {
-        dispatch(changeField(value));
-      },
-});
+const mapDispatchToProps = (dispatch) => ({});
 
 // connect(redux)(react)
 const MapContainer = connect(mapStateToProps, mapDispatchToProps)(Map);
