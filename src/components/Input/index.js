@@ -1,24 +1,34 @@
 import React from 'react';
 
 import InputStyled from './InputStyled';
+import api from '../../assets/StockossTest.js';
 
-class Input extends React.Component {
+const Input = ({ changeFieldValue, searchValue, savePosition }) => {
+  const handleChange = (evt) => {
+    evt.preventDefault();
+    changeFieldValue(evt.target.value);
 
-  
-  render() {
-    return (
-      <InputStyled>
-        <form className="search-bar-form">
-          <input 
-            className="search-bar-input"
-            placeHolder="ex: dq324"
-            type="text"
-            name="searchBar"
-          />
-        </form>
-      </InputStyled>
-    );
-  }
-}
+    if (searchValue.length === 4) {
+      console.log('Code valide !');
+      let id = evt.target.value;
+      const result = api(id).position;
+      savePosition(result);
+    } else {
+      console.log('Le code doit contenir 5 caractères !');
+    }
+  };
+
+  return (
+    <InputStyled>
+        <input 
+          className="search-bar-input"
+          placeholder="ex: dq324"
+          type="text"
+          onChange={handleChange}
+          value={searchValue}
+        />
+    </InputStyled>
+  );
+};
 
 export default Input;

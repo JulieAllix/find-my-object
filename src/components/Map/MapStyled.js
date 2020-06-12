@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
-
-import warehouse from '../../assets/images/warehouse.jpg';
 
 const MapStyled = styled.div`
     display: flex;
@@ -22,7 +19,6 @@ const MapStyled = styled.div`
 
     .shelves {
         position: absolute;
-        border: 1px solid red;
         width: 110px;
         height: 170px;
         z-index: 2;
@@ -38,18 +34,6 @@ const MapStyled = styled.div`
         border: 1px solid green;
     }
 
-    .shelf {
-        width: 16.66%;
-        border: 1px solid blue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .shelf-name {
-        font-size: .7rem;
-    }
-
     @media screen and (min-width: 600px){
         .warehouse {
             width: 580px;
@@ -62,9 +46,6 @@ const MapStyled = styled.div`
             left: 15.47rem;
         }
 
-        .shelf-name {
-            font-size: 1rem;
-        }
     }
 
     @media screen and (min-width: 900px){
@@ -79,9 +60,6 @@ const MapStyled = styled.div`
             left: 22.6rem;
         }
 
-        .shelf-name {
-            font-size: 1.5rem;
-        }
     }
     
 `

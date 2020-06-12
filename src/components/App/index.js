@@ -1,25 +1,20 @@
 import React from 'react';
 
 import Header from '../Header';
-import Input from '../Input';
-import Map from '../Map';
+import Input from '../../containers/Input';
+import Map from '../../containers/Map';
 
 import AppStyled from './AppStyled';
 
-import { render } from '@testing-library/react';
+const App = () => {
+  return (
+    <AppStyled>
+      <Header />
+      <Input />
+      <Map />
+    </AppStyled>
+  );
+};
 
-class App extends React.Component {
-
-  
-  render() {
-    return (
-      <AppStyled>
-        <Header />
-        <Input />
-        <Map />
-      </AppStyled>
-    );
-  }
-}
 
 export default App;
