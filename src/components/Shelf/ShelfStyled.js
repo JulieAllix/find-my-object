@@ -61,6 +61,7 @@ const ShelfStyled = styled.div`
     }
 
     @media screen and (min-width: 900px){
+        
         .shelf {
             width: 50px;
         }

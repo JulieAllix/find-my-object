@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import InputStyled from './InputStyled';
+
 import api from '../../assets/StockossTest.js';
 
 const Input = ({ 
@@ -26,7 +27,8 @@ const Input = ({
     } else {
       changeOpacityStatus(false);
       savePosition("");
-    }
+    };
+    
   };
 
   return (
@@ -45,13 +47,15 @@ const Input = ({
           <span className="content-name">Identifiant</span>
         </label>
       </form>
-      <p className={classNames({
-          warning: true,
-          appear: opacityStatus,
-        })}
-      >
-        Attention, vous avez saisi un trop grand nombre de caractères : l'identifiant doit contenir <em>5 caractères</em>, ni plus ni moins !
-      </p>
+      <div className="warning-container">
+        <p className={classNames({
+            warning: true,
+            appear: opacityStatus,
+          })}
+        >
+          Attention, vous avez saisi un trop grand nombre de caractères : l'identifiant doit contenir <em>5 caractères</em>, ni plus ni moins !
+        </p>
+      </div>
     </InputStyled>
   );
 };

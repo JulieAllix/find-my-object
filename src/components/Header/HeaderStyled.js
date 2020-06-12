@@ -8,13 +8,13 @@ const HeaderStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;  
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     .warehouse {
         background-image: url(${warehouse});
         background-position: center;
         background-size: cover;
-        margin-top: 4rem;
+        margin-top: 2rem;
         height: 180px;
         width: 100%;
     }
@@ -57,8 +57,10 @@ const HeaderStyled = styled.div`
     }
 
     @media screen and (min-width: 600px){
+        margin-top: 5rem;
 
         .warehouse {
+            margin-top: 4rem;
             height: 300px;
         }
 
@@ -82,6 +84,7 @@ const HeaderStyled = styled.div`
             font-size: ${theme.tabletContent};
             line-height: 1.5rem;
         }
+        
     }
 
     @media screen and (min-width: 900px){
@@ -115,9 +118,11 @@ const HeaderStyled = styled.div`
     }
 
     @media screen and (min-width: 1400px){
+
         .instructions-container {
             margin: 4rem 8rem;
         }
+
     }
     
 `

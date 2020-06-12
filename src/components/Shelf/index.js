@@ -38,5 +38,4 @@ const Shelf = ({letter, number, highlightedShelf}) => {
   }
 };
 
-
 export default Shelf;

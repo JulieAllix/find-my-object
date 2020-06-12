@@ -4,14 +4,6 @@ import theme from '../../styles/theme';
 const AppStyled = styled.div`
 
     font-family: ${theme.contentFont};
-
-    @media screen and (min-width: 600px){
-    
-    }
-
-    @media screen and (min-width: 900px){
-
-    }
     
 `
 

@@ -72,8 +72,13 @@ const InputStyled = styled.div`
         transform: translateX(0%);
     }
 
+    .warning-container {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
     .warning {
-        margin-top: 1rem;
+        width: 100%;
         font-size: ${theme.mobileContent};
         color: #e63946;
         opacity: 0;
@@ -105,8 +110,13 @@ const InputStyled = styled.div`
             font-size: ${theme.tabletContentMin};
         }
 
+        .warning-container {
+            margin: 1rem 2rem;
+        }
+
         .warning {
             font-size: ${theme.tabletContent};
+            text-align: center;
         }
 
     }
@@ -130,9 +140,15 @@ const InputStyled = styled.div`
             font-size: ${theme.desktopContentMin};
         }
 
+        .warning-container {
+            margin: 0 4rem;
+        }
+
         .warning {
             font-size: ${theme.desktopContent};
+            margin-top: 2rem;
         }
+        
     }
     
 `

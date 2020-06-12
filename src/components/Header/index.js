@@ -19,11 +19,10 @@ const Header = () => {
       </div>
       <div className="instructions-container">
         <p className="subtitle">Trouvez l'emplacement d'un objet dans l'entrepôt en temps réel !</p> 
-        <p className="instructions-paragraph">Saisissez l'identifiant <em>(cinq caractères)</em> de l'objet que vous cherchez dans la barre de recherche ci-dessous. Son emplacement apparaîtra sur la carte de l'entrepôt.</p>
+        <p className="instructions-paragraph">Saisissez l'identifiant <em>(cinq caractères)</em> de l'objet que vous cherchez dans la barre de recherche ci-dessous. Son emplacement apparaîtra instantanément sur la carte de l'entrepôt.</p>
       </div>
     </HeaderStyled>
   );
 };
-
 
 export default Header;

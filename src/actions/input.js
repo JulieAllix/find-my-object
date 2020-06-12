@@ -8,10 +8,12 @@ export const changeField = (value) => ({
   type: CHANGE_FIELD,
   value,
 });
+
 export const savePosition = (value) => ({
   type: SAVE_POSITION,
   value,
 });
+
 export const changeOpacityStatus = (bool) => ({
   type: CHANGE_OPACITY_STATUS,
   bool,

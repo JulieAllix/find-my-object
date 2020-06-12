@@ -4,7 +4,7 @@ const MapStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto 3rem;
+    margin: 0 auto 3rem;
 
     .map-container {
         display: flex;
@@ -34,6 +34,7 @@ const MapStyled = styled.div`
     }
 
     @media screen and (min-width: 600px){
+        
         .warehouse {
             width: 580px;
         }
@@ -48,6 +49,8 @@ const MapStyled = styled.div`
     }
 
     @media screen and (min-width: 900px){
+        margin: 2rem auto 3rem;
+
         .warehouse {
             width: 850px;
         }

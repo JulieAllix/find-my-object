@@ -37,5 +37,4 @@ const Map = ({ highlightedShelf }) => {
   );
 };
 
-
 export default Map;
