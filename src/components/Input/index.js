@@ -20,13 +20,21 @@ const Input = ({ changeFieldValue, searchValue, savePosition }) => {
 
   return (
     <InputStyled>
+      <form className="form">
         <input 
-          className="search-bar-input"
-          placeholder="ex: dq324"
           type="text"
+          name="identifiant"
+          autocomplete="off"
+          required
+          className="search-bar-input"
+          /*placeholder="ex: dq324"*/
           onChange={handleChange}
           value={searchValue}
         />
+        <label for="identifiant" className="label-name">
+          <span className="content-name">Identifiant</span>
+        </label>
+      </form>
     </InputStyled>
   );
 };

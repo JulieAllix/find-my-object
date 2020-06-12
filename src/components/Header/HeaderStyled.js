@@ -7,9 +7,8 @@ const HeaderStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 2rem auto;
-    
+    justify-content: center;  
+    margin-top: 2rem;
 
     .warehouse {
         background-image: url(${warehouse});

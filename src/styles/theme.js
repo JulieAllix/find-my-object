@@ -23,6 +23,10 @@ const theme = {
     mobileContent: '1rem',
     tabletContent: '1.3rem',
     desktopContent: '1.5rem',
+
+    mobileContentMin: '.9rem',
+    tabletContentMin: '1.2rem',
+    desktopContentMin: '1.4rem',
     
 };
 
