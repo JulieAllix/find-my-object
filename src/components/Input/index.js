@@ -8,13 +8,14 @@ const Input = ({ changeFieldValue, searchValue, savePosition }) => {
     evt.preventDefault();
     changeFieldValue(evt.target.value);
 
-    if (searchValue.length === 4) {
+    if (evt.target.value.length === 5) {
       console.log('Code valide !');
       let id = evt.target.value;
       const result = api(id).position;
       savePosition(result);
     } else {
       console.log('Le code doit contenir 5 caractères !');
+      savePosition("");
     }
   };
 
@@ -27,7 +28,6 @@ const Input = ({ changeFieldValue, searchValue, savePosition }) => {
           autocomplete="off"
           required
           className="search-bar-input"
-          /*placeholder="ex: dq324"*/
           onChange={handleChange}
           value={searchValue}
         />

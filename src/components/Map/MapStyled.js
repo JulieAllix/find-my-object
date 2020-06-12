@@ -4,7 +4,7 @@ const MapStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 5rem auto 3rem;
 
     .map-container {
         display: flex;
