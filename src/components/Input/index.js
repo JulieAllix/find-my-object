@@ -31,9 +31,13 @@ const Input = ({
     
   };
 
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+  };
+
   return (
     <InputStyled>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <input 
           type="text"
           name="identifiant"
